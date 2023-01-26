@@ -20,7 +20,7 @@ const rwClient = twitterClient.readWrite;
 
 export default async function handler(_req, res){
   await rwClient.v2
-    .tweet("Hello World!")
+    .tweet("Grady Booch: La función de un buen software es hacer que lo complejo aparente ser simple")
     .then((response) => {
       
       res.status(200).json({ data: response, message:"El bot ha hecho un tweet" })
