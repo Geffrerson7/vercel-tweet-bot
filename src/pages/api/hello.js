@@ -20,7 +20,7 @@ const rwClient = twitterClient.readWrite;
 
 export default async function handler(_req, res){
   await rwClient.v2
-    .tweet("Grady Booch: La función de un buen software es hacer que lo complejo aparente ser simple")
+    .tweet("La publicidad nos hace codiciar autos y ropa. Trabajos odiosos para comprar mierda que no necesitamos. Somos los hijos medianos de la historia. Sin propósito ni lugar. No tenemos la gran guerra. Ni la gran depresión. Nuestra gran guerra es espiritual. Nuestra gran depresión son nuestras vidas.")
     .then((response) => {
       
       res.status(200).json({ data: response, message:"El bot ha hecho un tweet" })
